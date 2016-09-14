@@ -8,6 +8,6 @@
     <import resource="classpath:META-INF/cxf/cxf.xml"/>
     <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
 
-    <jaxws:endpoint id="sendSMS" implementor="com.vivas.service.impl.SendSMSServiceImpl" address="/SendSMS"/>
+    <jaxws:endpoint id="tcbService" implementor="com.vivas.service.impl.TCBServiceImpl" address="/TCBService"/>
 
 </beans>

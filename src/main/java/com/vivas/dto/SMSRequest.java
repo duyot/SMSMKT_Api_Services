@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  * Created by duyot on 9/12/2016.
  */
-@XmlRootElement(name = "MT")
+@XmlRootElement(name = "SMSRequest")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class MT {
+public class SMSRequest {
     @XmlElement(name="MsgID")
     private String MsgID;
     @XmlElement(name="Sender")
@@ -34,10 +34,10 @@ public class MT {
     @XmlElement(name="Signature")
     private String Signature;
 
-    public MT() {
+    public SMSRequest() {
     }
 
-    public MT(String msgID, String sender, String mobinumber, String msgText, String msgType, String moID, String priority, String localTime, String extension, String signature) {
+    public SMSRequest(String msgID, String sender, String mobinumber, String msgText, String msgType, String moID, String priority, String localTime, String extension, String signature) {
         MsgID = msgID;
         Sender = sender;
         Mobinumber = mobinumber;

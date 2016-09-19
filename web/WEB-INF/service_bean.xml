@@ -15,13 +15,13 @@
     <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
 
     <!--SOAP-->
-    <jaxws:endpoint id="tcbService" implementor="com.vivas.service.impl.TCBServiceImpl" address="/TCBService"/>
+    <jaxws:endpoint id="tcbService" implementor="com.vivas.service.impl.soap.TCBServiceImpl" address="/TCBService"/>
 
     <!--REST-->
 
 
 
-    <jaxrs:server id="tcbServiceRest" address="/TCBServiceRest">
+    <jaxrs:server id="tcbServiceRest" address="/TCBServiceRest" >
         <jaxrs:serviceBeans>
             <ref bean="tcbServiceRestImpl" />
         </jaxrs:serviceBeans>
@@ -31,7 +31,7 @@
         </jaxrs:providers>
     </jaxrs:server>
 
-    <bean id="tcbServiceRestImpl" class="com.vivas.service.impl.TCBServiceRestImpl"/>
+    <bean id="tcbServiceRestImpl" class="com.vivas.service.impl.rest.TCBServiceRestImpl"/>
 
 
 </beans>

@@ -1,4 +1,4 @@
-package com.vivas.service.impl;
+package com.vivas.service.impl.soap;
 
 import com.vivas.dto.*;
 import com.vivas.service.interfaces.TCBService;

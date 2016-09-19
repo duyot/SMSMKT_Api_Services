@@ -1,4 +1,4 @@
-package com.vivas.service.impl;
+package com.vivas.service.impl.rest;
 
 import com.vivas.dto.*;
 import com.vivas.persistent.dao.DBUtils;

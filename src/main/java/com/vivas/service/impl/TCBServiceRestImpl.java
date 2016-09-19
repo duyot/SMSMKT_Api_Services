@@ -1,7 +1,7 @@
 package com.vivas.service.impl;
 
 import com.vivas.dto.*;
-import com.vivas.persistent.dao.DBUtils;
+import com.vivas.persistent.DBUtils;
 import com.vivas.service.interfaces.TCBService;
 
 import javax.ws.rs.Consumes;
@@ -26,7 +26,7 @@ public class TCBServiceRestImpl implements TCBService {
 
     @POST
     @Path("/SendSMSBlank")
-    @Produces({"application/xml"})
+    @Produces({"application/xml","application/json"})
     @Consumes({"application/xml","application/json","application/x-www-form-urlencoded"})
     public SMSResponse sendSMSBlank() {
         Connection con = DBUtils.getConnection();

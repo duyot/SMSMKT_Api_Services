@@ -2,6 +2,7 @@ package com.vivas.service.impl;
 
 import com.vivas.dto.*;
 import com.vivas.service.interfaces.TCBService;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.jws.WebService;
@@ -14,7 +15,6 @@ import java.util.List;
  */
 @WebService(endpointInterface = "com.vivas.service.interfaces.TCBService",serviceName = "TCBService")
 public class TCBServiceImpl implements TCBService {
-
     @Resource
     public WebServiceContext wsContext;
 
